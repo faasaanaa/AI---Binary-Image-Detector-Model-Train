@@ -1,10 +1,11 @@
 # IS PROJ
 
-Minimal README for the project.
-
 ## Overview
 
-This repository contains code for training and running models in the `backend` folder. Training scripts, datasets, and saved model artifacts are stored under `backend/` and the repository root.
+This repository contains the Python backend and a minimal dark themed Next.js frontend.
+
+- `backend/` holds the model training and inference code.
+- `front end/` holds the Next.js app for image upload, processing, and result display.
 
 ## Repository layout
 
@@ -13,6 +14,7 @@ This repository contains code for training and running models in the `backend` f
   - `training/train_model.py` — training script
   - `dataset/` — datasets (may be large)
 - `saved_models/` — (model artifacts, ignored by default)
+- `front end/` — Next.js frontend app
 - `requirments.txt` — Python dependencies
 
 ## Setup
@@ -21,9 +23,7 @@ This repository contains code for training and running models in the `backend` f
 
 ```bash
 python -m venv venv
-# Windows PowerShell
 .\venv\Scripts\Activate.ps1
-# Windows CMD
 venv\Scripts\activate.bat
 ```
 
@@ -47,7 +47,15 @@ python backend/training/train_model.py
 python backend/main.py
 ```
 
+- Run the frontend:
+
+```bash
+cd "front end"
+npm install
+npm run dev
+```
+
 ## Notes
 
-- Large files (models and datasets) are excluded via `.gitignore`.
-- Update this README with usage examples, model format, and dataset instructions as the project evolves.
+- Large files (models, datasets, and Next build output) are excluded via `.gitignore`.
+- Update this README with API wiring details when the frontend is connected to the backend model.

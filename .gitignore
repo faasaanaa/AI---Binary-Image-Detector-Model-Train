@@ -1,52 +1,58 @@
-# Python
 __pycache__/
 *.py[cod]
 *$py.class
 
-# Virtual environments
 venv/
 .venv/
 env/
 
-# VS Code
+node_modules/
+.next/
+out/
+front end/node_modules/
+front end/.next/
+front end/out/
+
+# Also handle a frontend folder without a space (common)
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.env.local
+frontend/.env
+
+# Lockfiles
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
 .vscode/
 *.code-workspace
 
-# Pytest
 .pytest_cache/
 
-# Distribution/build
 build/
 dist/
 *.egg-info/
 
-# OS files
 .DS_Store
 Thumbs.db
 
-# Logs
 logs/
 *.log
 
-# Python eggs
 *.egg
 
-# Model artifacts (large binary files)
 saved_models/
 backend/saved_models/
 *.keras
 *.h5
 
-# Datasets (if large)
 backend/dataset/
 dataset/
 
-# IDE
 .idea/
 
-# Jupyter
 .ipynb_checkpoints/
 
-# Environment files
 .env
 Pipfile.lock
